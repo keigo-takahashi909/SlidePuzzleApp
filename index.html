@@ -13,27 +13,32 @@
 
 <body class="custom-body">
 
-    <div class="container-fluid">
+    <header>
+        <div class="container text-center">
+            <img src="img/original_images/logo.png" alt="" class="header-logo">
+        </div>
+    </header>
 
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <img src="" alt="">
+    <div class="container-fluid">
+        <div class="row justify-content-center main-cover">
+            <div class="col-md-2 col-sm-6 col-xs-6 col-offset-4">
+                <img src="img/original_images/zundamon_pointing.png" alt="" id="zundamon-img">
             </div>
-            <div class="col-4">
-                テスト2
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="select-box">
+                    <div class="speech-box">
+                        <img src="img/original_images/speech.png" alt="" class="speech-img">
+                        <h2 class="speech-text">好きなキャラクターを選ぶのだ</h1>
+                    </div>
+                    <ul class="menu">
+                        <li data-level="zundamon">ずんだもん</li>
+                        <li data-level="zunko">東北ずん子</li>
+                        <li data-level="kiritan">東北きりたん</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <section id="cover" class='active'>
-            <h1 class="text-center">Enjoy Coding!</h1>
-        </section>
-
-        <!-- slide-puzzle app -->
-        <section id="slide-puzzle" class='app'>
-            <h1>Slide Puzzle</h1>
-        </section>
     </div>
-    
     <!-- Bootstrap JS iport -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>

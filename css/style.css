@@ -1,6 +1,6 @@
-/* common use => */
+/* 全体 開始 */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,38 +10,86 @@
 }
 
 .custom-body {
-    background-color: #444;
+    height: 100vh;
+    width: 100vw;
+    background-color: #B9D08B;
 }
 
-h1{
-    font-size:2.5rem;
-    letter-spacing:0.2rem;
+.main-cover {
+    padding: 40px;
+    background-color: rgba(255,255,255,0.36);
 }
 
-ul{
+ul {
     list-style: none;
 }
+/* 全体 終了 */
 
-select{
-    font-size: 1.2rem;
-    width: 20rem;
-    padding-left: 1.5rem;
-    text-align: left;
-    background-color:#000;
+/* ヘッダーエリア 開始 */
+header {
+    min-height: 150px;
 }
-/* <= common use */
 
-/* section => */
-section{
-    width: 100%;
-    height: 100vh;
-    display: none;
-    justify-content:center;
+.header-logo {
+    width: 40%;
+    height: 40%;
+}
+/* ヘッダーエリア 終了 */
+
+/* キャラクター選択エリア 開始 */
+.select-box {
+    display:flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-section.active{
-    display: flex;
+.speech-box {
+    position: relative;
 }
-/* <= section */
+
+.speech-img {
+    width: 100%;
+    min-width: 200px;
+    transform: scaleX(-1);
+}
+
+.speech-text {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: black;
+    white-space: nowrap;
+}
+
+.menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu > li {
+    width: 80%;
+    min-width: 180px;
+    font-size: 2rem;
+    margin: 0.5rem;
+    background-color: hotpink;
+    border: 3px solid hotpink;
+    cursor: pointer;
+}
+/* キャラクター選択エリア 終了 */
+
+/* ずんだもん立ち絵 開始*/
+#zundamon-img {
+    width: 262.3px;
+    height: 400px;
+    transform: scaleX(-1); /* 立ち絵反転 */
+    float: right;
+}
+/* ずんだもん立ち絵 終了*/
